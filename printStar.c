@@ -1,18 +1,30 @@
 #include<stdio.h>
 
 int main(){
-    int times=5;
-    for(int i=0;i<9;i++){
-        if(i>=5){
-            times=times+1;
-        }else{
-            times=times-1;
-        }
-        for(int j=0;j<=times;j++){
-            printf("%c ",'*');
+    int i,j,rows=5;
+    for( i=0;i<rows;i++){
+        for(j=0;j<=i;j++){
+            printf("* ");
         }
         printf("\n");
-      
     }
+    printf("\n\n");
+    for(i=rows;i>0;i--){
+        for(j=0;j<i;j++){
+            printf("* ");
+        }
+        printf("\n");
+    }
+//FULL PYRAMID
+    for(i=0;i<rows;i++){
+        for(int m=0;m<rows-i;m++){
+            printf(" ");
+        }
+        for(j=0;j<2*i-1;j++){
+            printf("*");
+        }
+        printf("\n");
+    }
+
     return 0;
 }

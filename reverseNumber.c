@@ -7,4 +7,4 @@ int main(){
         temp=temp/10;
     }
     return 0;
-}
+}       
