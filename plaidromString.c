@@ -19,6 +19,7 @@ int main(){
         }
     }
     if(matchCount==strlen(str)){
+    
         printf("it is A plaindrom string =%s",str);
     }else{
         printf("it is not a plaindrom string =%s",str);

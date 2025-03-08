@@ -16,3 +16,4 @@ int main(){
     printf("%d",multiplication[0][1]);
  return 0;
 }
+

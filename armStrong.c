@@ -9,9 +9,9 @@ int main(){
     int reminder=num%10;
     num=num/10;
     sum=sum+pow(reminder,numLength);
-    
+
    }
- // printf("%d---%d\n",temp,numLength);
+  //printf("%d---%d\n",temp,sum);
    if(sum==temp){
     printf("%d is an armstrong number",temp);
    }else{
