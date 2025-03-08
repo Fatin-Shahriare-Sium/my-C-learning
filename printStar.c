@@ -1,29 +1,28 @@
 #include<stdio.h>
-
 int main(){
-    int i,j,rows=5;
-    for(i=0;i<rows;i++){
-        for(j=0;j<=i;j++){
-            printf("* ");
+    int rows,cols;
+    scanf("%d",&rows);
+    for(int i=0;i<rows;i++){
+        for(int j=0;j<=i;j++){
+            printf("#");
         }
         printf("\n");
     }
-//FULL PYRAMID
-    // for(i=0;i<rows;i++){
-    //     for(int m=0;m<rows-i;m++){
-    //         printf(" ");
-    //     }
-    //     for(j=0;j<2*i-1;j++){
-    //         printf("*");
-    //     }
-    //     printf("\n");
-    // }
-    for(i=0;i<rows;i++){
-        for(int m=0;m<rows-i;m++){
+    for(int i=0;i<rows;i++){
+        for(int j=0;j<rows-i-1;j++){
             printf(" ");
         }
-        for(j=0;j<(2*i-1);j++){
-            printf("*");
+        for(int k=0;k<=i;k++){
+            printf("#");
+        }
+        printf("\n");
+    }
+    for(int i=0;i<rows;i++){
+        for(int j=0;j<rows-i-1;j++){
+            printf(" ");
+        }
+        for(int k=0;k<(2*i-1);k++){
+            printf("#");
         }
         printf("\n");
     }

@@ -1,5 +1,7 @@
 {
   "files.associations": {
-    "stdio.h": "c"
+    "stdio.h": "c",
+    "A. Way Too Long Words.C": "cpp",
+    "A.WayTooLongWords.C": "cpp"
   }
 }
