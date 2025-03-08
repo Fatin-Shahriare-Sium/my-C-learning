@@ -43,7 +43,7 @@ void convertDecToBin(int dec){
         temp=temp/2;
     }
     for(int j=arrLength;j>0;j--){
-        printf("%d",binArr[j]);
+        printf("%d",binArr[j-1]);
     }
 
     
