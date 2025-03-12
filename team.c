@@ -5,9 +5,9 @@ int main(){
     int problemArr[n][3];
     int ableToSolve=0;
     for(int i=0;i<n;i++){
-        for(int j=0;j<3;j++){
-            scanf("%d",&problemArr[i][j]);
-        }
+        
+            scanf("%d %d %d",&problemArr[i][0],&problemArr[i][1],&problemArr[i][2]);
+        
     }
 
     for(int i=0;i<n;i++){
@@ -17,7 +17,7 @@ int main(){
             count+=1;
            }
         }
-        if(count==2){
+        if(count>=2){
             ableToSolve+=1;
         }
     }
