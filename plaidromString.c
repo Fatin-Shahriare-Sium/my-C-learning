@@ -1,28 +1,23 @@
 #include<stdio.h>
 #include<string.h>
 int main(){
-    char str[20];
-    scanf("%s",&str);
-    char reverStr[4];
-    int matchCount=0;
-    for(int i=strlen(str)-1;i>=0;i--){
-     printf("%d-%d\n",strlen(str)-i-1,i);
-
-        reverStr[strlen(str)-i-1]=str[i];
-       
+    char word[50];
+    scanf("%s",&word);
+    int wordLength=strlen(word);
+    int isPlaindrom=0;
+    for(int i=0;i<wordLength/2;i++){
+        printf("%d %d\n",i,wordLength-1-i);
+      if(word[i]!=word[wordLength-1-i]){
+         isPlaindrom=0;
+      }else{
+         isPlaindrom=1;
+      }
     }
 
-    for(int j=0;j<strlen(str);j++){
-        if(str[j]==reverStr[j]){
-            printf("%d",strlen(str));
-            matchCount=matchCount+1;
-        }
-    }
-    if(matchCount==strlen(str)){
-    
-        printf("it is A plaindrom string =%s",str);
+    if(isPlaindrom){
+        printf("%s is a plaindrom",word);
     }else{
-        printf("it is not a plaindrom string =%s",str);
+        printf("%s is not  a  plaindrom",word);
     }
     return 0;
 }
